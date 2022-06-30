@@ -1,0 +1,116 @@
+/* FONTS */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url(../../Fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url(../../Fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url(../../Fonts/Kumbh_Sans/KumbhSans-VariableFont_wght.ttf);
+  font-weight: 700;
+}
+/* CUSTOM PROPERTIES */
+:root{
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --dark-gray: hsl(0, 0%, 90%);
+}
+/* GLOBAL STYLES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(100, 0, 0, .1);  console.log for css*/
+}
+html{
+  background: url("images/bg-pattern-bottom.svg") 100% 500px no-repeat, 
+  url("images/bg-pattern-top.svg") 0px -500px no-repeat;
+  background-color: var(--dark-cyan);
+  font-family: "Kumbh Sans";
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  max-width: 100%;
+}
+ul{
+  list-style-type: none;
+}
+
+
+/* PROFILE CARD */
+.profile-card{
+  background-color: aliceblue;
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 18px 50px 5px rgba(0, 0, 0, .2);
+  position: relative;
+}
+.bg-img{
+  height: 9rem;
+  background-image: url("images/bg-pattern-card.svg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+img{
+  border-radius: 50%;
+  border: 5px solid aliceblue;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile-card h1{
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.2rem;
+}
+.profile-card h1 span{
+  font-weight: 300;
+  margin-left: .5rem;
+}
+.profile-card p{
+ text-align: center;
+ margin: .8rem 0 2rem 0;
+ color: var(--very-dark-desaturated-blue);
+}
+.user-stats{
+  border-top: 1px solid var(--dark-gray);
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1.6rem;
+}
+.user-stats li{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
+}
+.user-stats li span{
+  font-size: .7rem;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: 300;
+}
+
+/* FOOTER */
+.attribution{ 
+  font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+  color: hsl(228, 45%, 44%); 
+  text-decoration: none;
+}
+.attribution a:hover{ 
+  border-bottom: 2px solid var(--very-dark-desaturated-blue); 
+}
